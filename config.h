@@ -5,12 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monaco:pixelsize=21:antialias=true:autohint=true";
+static char *font = "Operator Mono SSm Book:pixelsize=21:antialias=true:autohint=true";
 static char *font2[] = {
+	"Monaco Nerd Font Mono:pixelsize=21:antialias=true:autohint=true",
 	"JoyPixels:pixelsize=21:antialias=true:autohint=true",
 	"OPPOSans-L:pixelsize=21:antialias=true:autohint=true",
 };
-static int borderpx = 0;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -95,10 +96,10 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.75;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
