@@ -9,7 +9,6 @@ static char *font = "Operator Mono SSm Book:pixelsize=21:antialias=true:autohint
 static char *font2[] = {
 	"Monaco Nerd Font Mono:pixelsize=21:antialias=true:autohint=true",
 	"JoyPixels:pixelsize=21:antialias=true:autohint=true",
-	"OPPOSans-L:pixelsize=21:antialias=true:autohint=true",
 };
 static int borderpx = 0;
 
