@@ -7,7 +7,7 @@
  */
 static char *font = "Terminus:pixelsize=16:antialias=true:autohint=true";
 static char *font2[] = {
-	"Dotted Songti Circle:pixelsize=15:antialias=true:autohint=true",
+	"GoMono Nerd Font:pixelsize=15:antialias=true:autohint=true",
 	"Monaco Nerd Font Mono:pixelsize=15:antialias=true:autohint=true",
 	"JoyPixels:pixelsize=15:antialias=true:autohint=true",
 };
@@ -176,6 +176,8 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
+	{ ShiftMask,            Button4, kscrollup,      {.i = 1} },
+	{ ShiftMask,            Button5, kscrolldown,    {.i = 1} },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
